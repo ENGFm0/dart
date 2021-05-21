@@ -1,27 +1,21 @@
+
 import 'dart:math';
 import 'dart:io';
 
  main() {
-List<int>numbers=[];
-Random random=Random();
-for(int i=0;i<200;i++){
-  int randoms=random.nextInt(500);
-  numbers.add(randoms);
-for(int k in numbers){
-  if(k%2==0){
-    print("$k its even");
-
-  }
-  else {
-   print("$k its odd") ;
-
-  }
-}
-  }
-
-}
-
-
+   List<int>mylist = [];
+   Random random = Random();
+   for (int i = 0; i < 30; i++) {
+     int count = random.nextInt(1000);
+     mylist.add(count);
+     if (count% 2 == 0) {
+       print("$count+its even");
+     }
+     else {
+       print("$count+its odd");
+     }
+   }
+ }
 
 
 
